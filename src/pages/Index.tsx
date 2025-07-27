@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import ResourcesSection from "@/components/ResourcesSection";
 import PrinciplesSection from "@/components/PrinciplesSection";
 import AboutSection from "@/components/AboutSection";
+import FounderSection from "@/components/FounderSection";
 import ImpactSection from "@/components/ImpactSection";
 import GetInvolvedSection from "@/components/GetInvolvedSection";
 import ContactSection from "@/components/ContactSection";
@@ -14,9 +14,9 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
-        <ResourcesSection />
         <PrinciplesSection />
         <AboutSection />
+        <FounderSection />
         <ImpactSection />
         <GetInvolvedSection />
         <ContactSection />

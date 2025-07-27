@@ -17,11 +17,16 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           {/* Main tagline */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fadeInUp">
-            <span className="text-primary">Empowering Students</span>
-            <span className="text-muted-foreground"> | </span>
-            <span className="text-secondary">Inspiring Humanity</span>
-          </h1>
+          <div className="mb-4 animate-fadeInUp">
+            <h1 className="text-4xl md:text-6xl font-bold mb-2">
+              <span className="text-hero">PkeLibrary Foundation</span>
+            </h1>
+            <h2 className="text-3xl md:text-5xl font-bold">
+              <span className="text-primary">Empowering Students</span>
+              <span className="text-muted-foreground"> | </span>
+              <span className="text-secondary">Inspiring Humanity</span>
+            </h2>
+          </div>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 animate-fadeInUp delay-200 font-medium italic">
@@ -49,7 +54,7 @@ const HeroSection = () => {
             <Button 
               variant="hero" 
               size="xl"
-              onClick={() => document.getElementById('resources')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.location.href = '/resources'}
             >
               <BookOpen className="w-5 h-5" />
               Explore Resources
@@ -70,7 +75,7 @@ const HeroSection = () => {
               variant="ghost"
               size="icon"
               className="mx-auto animate-bounce"
-              onClick={() => document.getElementById('resources')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('principles')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <ArrowDown className="w-6 h-6 text-secondary" />
             </Button>
